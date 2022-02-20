@@ -2,6 +2,9 @@
 
 :root{
     --blue: #0072b1;
+    --trust: #4facfe;
+    --confidence: #00f2fe;
+    --lightgray: #f7f7f7de;
 }
 
 *{
@@ -57,12 +60,27 @@ header{
     font-family: 'Poller One', cursive;
 }
 
+/* Links */
+
 a{
     font-size: 18px;
     text-decoration: none;
     color: white;
     padding-left: 20px;
 }
+
+.skills a{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 0;
+    transition: 0.07s ease;
+}
+
+.skills a:hover{
+    letter-spacing: 3px;
+}
+
 
 
 /* Main */ 
@@ -71,6 +89,57 @@ a{
     display: grid;
     flex: 1;
     grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* Profile Banner sidebar left */
+
+.profile-banner{
+    background-color: var(--lightgray);
+    height: auto;
+    width: auto;
+    border: 1px solid lightslategrey;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.profile{
+    border-bottom: 1px solid lightgrey;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(var(--blue),var(--confidence));
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.profile img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.profile .name{
+    padding: 5px 0px;
+}
+
+.profile-content{
+    flex: 1;
+    padding: 10px;
+}
+
+.skills ul{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.skills ul li{
+    padding-top: 5px;
 }
 
 /*Footer */
