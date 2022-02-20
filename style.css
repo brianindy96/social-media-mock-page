@@ -42,12 +42,48 @@ header{
     margin-left: auto;
 }
 
+.search{
+    margin-left: 20px; 
+    position: relative;
+    height: 25px;
+    width: 50%;
+}
+
 .search-btn{
-    margin-left: 20px;
-    width: 200px;
-    height: 2.5em;
-    border-radius: 10px;
     padding: 10px;
+    height: 23px;
+    border: 0;
+    height: 25px;
+    width: 25px;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+}
+
+.btn{
+    height: 25px;
+    width: 25px;
+    background-color: var(--blue);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, .search-btn:focus{
+    outline: none;
+}
+
+.search.active .search-btn{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(200px);
 }
 
 .logo span{
@@ -279,6 +315,7 @@ a{
     font-size: 20px;
     display: flex;
 }
+
 
 .div img{
 
