@@ -21,7 +21,7 @@ footer{
 
 body{
     display: flex;
-    height: 100vh;
+    height: auto;
     flex-direction: column;
     background-color: var(--lightgray);
 }
@@ -167,6 +167,7 @@ a{
     background-color: white;
     padding-top: 10px;
     margin-top: 30px;
+    margin-right: 20px;
     border-radius: 10px;
     height: auto;
     display: flex;
@@ -194,17 +195,81 @@ a{
 .post-bottom{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 10px;
 }
 
 /*Content */
 
+.line{
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    width: 1090px;
+}
+
+.feeds{
+    height: 76%;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.feed{
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin-right: 10px;
+}
+
+#one{
+    height: 200px;
+    
+}
+
+#two{
+    margin-top: 20px;
+    
+}
+
+/*Feed 1 */
+
+.feed .post-side img{
+    height: auto;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px white solid;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.feed .post-side{
+    display: flex;
+}
+
+.post-side .info{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.feed .post-bottom{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feed .post-bottom img{
+    margin-top: 10px;
+}
+
+#two .post-bottom img{
+    width: 100%;
+    height: auto;
+}
 
 /*Footer */
 
 footer{
-    height: 2em;
+    height: 3em;
 }
 
 
