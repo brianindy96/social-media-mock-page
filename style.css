@@ -231,8 +231,6 @@ a{
     
 }
 
-/*Feed 1 */
-
 .feed .post-side img{
     height: auto;
     width: 50px;
@@ -266,10 +264,37 @@ a{
     height: auto;
 }
 
+
+/* Sidebar: Right Navigations */
+
+.social-container{
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.div{
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: flex;
+}
+
+.div img{
+
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
 /*Footer */
 
 footer{
     height: 3em;
+}
+
+.div p{
+    padding-top: 10px;
+    padding-left: 15px;
 }
 
 
